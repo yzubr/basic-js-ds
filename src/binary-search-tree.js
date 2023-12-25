@@ -54,9 +54,11 @@ class BinarySearchTree {
 
 
 
-  has(/* data */) {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+  has(data) {
+    for (let node of this.base) {
+      if (node.data === data) return true;
+    }
+    return false;
   }
 
   find(node, data) {
